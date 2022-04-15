@@ -1,0 +1,17 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+
+ <ActionBar>
+ <Label text="Calculator" />
+ </ActionBar>
+
+ <StackLayout>
+
+ <Label text="Get Value Page" class="h1 text-center" backgroundColor="#00ff00" />
+ <Label id="lblTitel" backgroundColor="#0000ff" class="h3 text-center" />
+ <TextField id="txtNumber" class="h3 text-center" />
+<Button text="Submit Number" backgroundColor="#0000ff" class="h3 text-center" tap="getNumber" />
+
+
+ </StackLayout>
+</Page>
+

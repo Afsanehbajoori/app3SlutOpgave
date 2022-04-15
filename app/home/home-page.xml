@@ -1,10 +1,27 @@
 <Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
-    
+
     <ActionBar>
         <Label text="Home" />
     </ActionBar>
 
-    <GridLayout>
-        <!-- Add your page content here -->
-    </GridLayout>
+    <StackLayout>
+
+<Label text="Compute Page" class="h1 text-center" backgroundColor="#00ff00" />
+ <Button text="Get First Number" backgroundColor="#0000ff" class="h3 text-center" tap="{{getFirstNumber}}" />
+ <Label text="{{firstNumber}}" class="h3 text-center" />
+ <Button text="Get Second Number" backgroundColor="#0000ff" class="h3 text-center" tap="{{getSecondNumber}}" />
+ <Label text="{{secondNumber}}" class="h3 text-center" />
+
+ <StackLayout orientation="horizontal" >
+ <Button text="Add" tap="{{Add}}" backgroundColor="#0000ff" style="width:20%" />
+<Button text="Sub" tap="{{Sub}}" backgroundColor="#0000ff" style="width:20%" />
+ <Button text="Mul" tap="{{Mul}}" backgroundColor="#0000ff" style="width:20%" />
+ <Button text="Div" tap="{{Div}}" backgroundColor="#0000ff" style="width:20%" />
+
+ </StackLayout>
+
+ <Label text="Result:" class="h3 text-center" />
+ <Label id="lblResult" text="{{result}}" class="h3 text-center"/>
+
+    </StackLayout>
 </Page>
